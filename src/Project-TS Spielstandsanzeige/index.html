@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/src/Project-TS Spielstandsanzeige/main.ts"></script>
+    <link rel="stylesheet" href="/src/Project-TS Spielstandsanzeige/css/style.css">
+    <title>Project-TS Spielstandsanzeige</title>
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="scores">
+            <!-- Home Team -->
+            <div class="team">
+                <div class="score-container">
+                    <p id="homeScore">0</p>
+                    <h2>Home</h2>
+                </div>
+                <div class="buttons">
+                    <button data-team="home" data-points="1" class="home-button">+1</button>
+                    <button data-team="home" data-points="2" class="home-button">+2</button>
+                    <button data-team="home" data-points="3" class="home-button">+3</button>
+                </div>
+            </div>
+
+            <!-- Away Team -->
+            <div class="team">
+                <div class="score-container away">
+                    <p id="awayScore">0</p>
+                    <h2>Away</h2>
+                </div>
+                <div class="buttons">
+                    <button data-team="away" data-points="1" class="away-button">+1</button>
+                    <button data-team="away" data-points="2" class="away-button">+2</button>
+                    <button data-team="away" data-points="3" class="away-button">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="reset">Reset</button>
+    </div>
+</body>
+</html>
