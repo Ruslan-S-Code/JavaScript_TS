@@ -14,6 +14,10 @@ const form = document.getElementById("card-form") as HTMLFormElement;
 const cardsContainer = document.getElementById(
   "cards-container"
 ) as HTMLDivElement;
+const saveButton = document.getElementById("save-button") as HTMLButtonElement;
+const loadButton = document.getElementById("load-button") as HTMLButtonElement;
+
+let cards: Card[] = [];
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -99,3 +103,21 @@ function addCardToDOM(card: Card) {
     cardsContainer.removeChild(cardElement);
   });
 }
+
+// Сохранение всех карточек в localStorage
+saveButton.addEventListener("click", () => {
+  localStorage.setItem("cards", JSON.stringify(cards));
+  alert("Cards have been saved!");
+});
+
+// Загрузка карточек из localStorage
+loadButton.addEventListener("click", () => {
+  const savedCards = localStorage.getItem("cards");
+  if (savedCards) {
+    cards = JSON.parse(savedCards);
+    cardsContainer.innerHTML = ""; // Очистка контейнера перед загрузкой
+    cards.forEach((card) => addCardToDOM(card));
+  } else {
+    alert("No cards found in storage.");
+  }
+});

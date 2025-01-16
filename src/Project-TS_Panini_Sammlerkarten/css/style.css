@@ -71,3 +71,95 @@ button:hover {
     color: #ffffff;
 }
 
+#btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#save-button, #load-button {
+    flex: 1;
+    grid-column: span 1;
+    padding: 10px;
+    background-color: #818181;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#save-button:hover, #load-button:hover {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+/* Cards Ergebnis */
+
+
+
+blockquote {
+    margin: 10px 0;
+    font-style: italic;       /* Курсив для цитат */
+    color: #555;
+}
+
+.card {
+    border: 2px solid #cccccc; /* Граница карточки */
+    border-radius: 8px;       /* Скругление углов */
+    padding: 20px;            /* Внутренний отступ */
+    margin: 10px 0;           /* Отступ между карточками */
+    background-color: #ffffff; /* Цвет фона */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    width: 300px;             /* Фиксированная ширина карточки */
+    height: 450px;            /* Фиксированная высота карточки */
+    display: flex;            /* Flexbox для выравнивания */
+    flex-direction: column;   /* Элементы располагаются в колонку */
+    align-items: center;      /* Горизонтальное выравнивание по центру */
+    text-align: center;       /* Текст по центру */
+    overflow: hidden;         /* Обрезка содержимого, если оно выходит за границы */
+}
+
+.card-image {
+    width: 100%;              /* Изображение растягивается по ширине карточки */
+    height: 150px;            /* Фиксированная высота изображения */
+    object-fit: cover;        /* Обрезка изображения с сохранением пропорций */
+    border-radius: 8px;       /* Скругление для изображения */
+  }
+  
+  .card-info {
+    flex: 1;                  /* Остаток пространства используется для текста */
+    overflow-y: auto;         /* Скроллинг, если текст выходит за границы */
+  }
+  
+  .card-info h2, .card-info h3 {
+    margin: 10px 0;           /* Отступы между заголовками */
+  }
+  
+  .card-info p {
+    margin: 5px 0;            /* Отступы между параграфами */
+  }
+  
+  .delete-button {
+    margin-top: auto;         /* Кнопка удаления перемещается вниз */
+    padding: 10px;
+    background-color: #ff6666; /* Красный цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10rem;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000; /* Более тёмный красный цвет при наведении */
+  }
+
+  .cards-container {
+    display: grid;                   /* Включаем сетку */
+    grid-template-columns: repeat(6, 1fr); /* 6 столбцов с равной шириной */
+    gap: 1rem;                       /* Расстояние между карточками */
+    padding: 20px;                   /* Отступ внутри контейнера */
+    justify-content: center;         /* Выравнивание по центру */
+  }
