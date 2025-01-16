@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #dbdbdb;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+    max-width: 100%;
+}
+
+#firstname-input,
+#lastname-input {
+    grid-column: span 1;
+}
+
+#stagename-input {
+    grid-column: 1 / -1;
+}
+
+#albumcount-input, 
+#top10count-input {
+    grid-column: span 1;
+}
+
+#network-input, 
+#age-input {
+    grid-column: span 1;
+}
+
+#imageUrl-input {
+    grid-column: 1 / -1;
+}
+
+#quote-input {
+    grid-column: 1 / -1;
+    min-height: 100px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #9b9b9b;
+    border-radius: 4px;
+}
+
+button {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: #818181;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #212121;
+    color: #ffffff;
+}
+

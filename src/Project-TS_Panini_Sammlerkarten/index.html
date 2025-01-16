@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/src/Project-TS_Panini_Sammlerkarten/main.ts" defer></script>
+    <title>Project-TS Panini Sammlerkarten</title>
+    <link rel="stylesheet" href="/src/Project-TS_Panini_Sammlerkarten/css/style.css">
+</head>
+
+
+<body>
+    <form id="card-form">
+        <h1>Add a Card</h1>
+        <input type="text" id="firstname-input" placeholder="First Name" required />
+        <input type="text" id="lastname-input" placeholder="Last Name" required />
+
+        <input type="text" id="stagename-input" placeholder="Stage Name" required />
+
+        <input type="number" id="albumcount-input" placeholder="How Many Albums?" required />
+        <input type="number" id="top10count-input" placeholder="How Many Top 10 Singles?" required />
+
+        <input type="number" id="networth-input" placeholder="Net worth in EUR" required />
+        <input type="number" id="age-input" placeholder="How old is this Person?" required />
+
+        <input type="url" id="imageUrl-input" placeholder="Bild-URL" required />
+        <textarea id="quote-input" placeholder="A famous quote by this person" required></textarea>
+        <button type="submit" id="add-button">Add</button>
+    </form>
+
+    <div class="cards-container" id="cards-container">
+
+    </div>
+</body>
+
+</html>
