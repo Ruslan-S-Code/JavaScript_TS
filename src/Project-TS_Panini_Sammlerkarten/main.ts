@@ -70,6 +70,10 @@ form.addEventListener("submit", (event) => {
   // Отображение карточки
   addCardToDOM(newCard);
 
+  // neue karte in cards array adden damit sie gespeichert wertden kann
+  cards.push(newCard);
+  localStorage.setItem("cards", JSON.stringify(cards));
+
   // Очистка формы
   form.reset();
 });
@@ -92,7 +96,6 @@ function addCardToDOM(card: Card) {
         <button class="delete-button">Delete</button>
     `;
 
-  console.log(cardElement);
   cardsContainer.appendChild(cardElement);
 
   // Кнопка удаления карточки
@@ -100,7 +103,14 @@ function addCardToDOM(card: Card) {
     ".delete-button"
   ) as HTMLButtonElement;
   deleteButton.addEventListener("click", () => {
+    // Удаление карточки из DOM
     cardsContainer.removeChild(cardElement);
+
+    // Удаление карточки из массива
+    cards = cards.filter((c) => c !== card);
+
+    // Сохранение обновлённого массива в localStorage
+    localStorage.setItem("cards", JSON.stringify(cards));
   });
 }
 

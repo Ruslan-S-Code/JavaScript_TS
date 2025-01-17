@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/src/tag12_DOM/Dom-Elements-TS-Level-2_3/main.ts" defer ></script>
-    <title>Dom-Elements-TS-Level-1_3</title>
+    <script src="/src/tag12_DOM/Dom-Elements-TS-Level-2_3/main.ts" defer></script>
+    <title>Dom-Elements-TS-Level-2_3</title>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    header {
+        background-color: #333;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-button {
+        background-color: #666;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+        opacity: 0.8;
+    }
+
+    #change-button {
+        background-color: #4CAF50;
+    }
+</style>
+
 <body>
-    
+    <header>
+        <button class="nav-button" id="home">Home</button>
+        <button class="nav-button" id="news">News</button>
+        <button class="nav-button" id="contact">Contact</button>
+        <button class="nav-button" id="change-button">Change Me</button>
+    </header>
 </body>
+
 </html>
