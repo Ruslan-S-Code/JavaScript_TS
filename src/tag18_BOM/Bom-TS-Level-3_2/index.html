@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS-Vertiefung-Bom-Level-3_2</title>
+</head>
+<style>
+    #minuteCountdownBereich {
+        background-color: #dcffcc;
+        color: #baabda;
+        display: inline-block;
+        padding: 100px 1200px;
+        font-family: Geneva;
+        font-weight: bold;
+    }
+
+    input {
+        border-radius: 5px;
+        background: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    button {
+        border-radius: 5px;
+        padding: 10% 20%;
+        background: #d79abc;
+        display: flex;
+        gap: 20px;
+    }
+
+    button:hover {
+        border-radius: 5px;
+        background: #9ad7d5;
+    }
+</style>
+
+<body>
+    <div id="minuteCountdownBereich">
+        <p>Minuten Countdown:</p>
+        <div id="time">00:00</div>
+        <input id="minutes" type="text" placeholder=" Minuten übrig..." />
+        <br />
+        <button id="start-button">Start Countdown</button>
+        <br />
+        <button id="pause-button">Pause Countdown</button>
+        <br />
+        <button id="restart-button">Restart Countdown</button>
+        <br />
+        <button id="reset-button">Reset Countdown</button>
+    </div>
+
+    <script type="module" src="/src/tag18_BOM/Bom-TS-Level-3_2/main.ts"></script>
+</body>
+
+</html>
