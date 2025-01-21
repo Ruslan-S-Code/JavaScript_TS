@@ -976,14 +976,13 @@ function renderMovies(movieList: Movie[]): void {
     return;
   }
 
-  movieList.forEach(([title, year, director, duration, genres, rating]) => {
+  movieList.forEach(([title, year, director, , genres, rating]) => {
     const movieElement = document.createElement("div");
     movieElement.classList.add("movie");
 
     movieElement.innerHTML = `
       <h3>${title} (${year})</h3>
       <p><strong>Director:</strong> ${director}</p>
-      <p><strong>Duration:</strong> ${duration}</p>
       <p><strong>Genres:</strong> ${genres.join(", ")}</p>
       <p><strong>Rating:</strong> ${rating}</p>
     `;
@@ -1000,10 +999,13 @@ function filterMovies(): void {
   }
 
   const searchTerm = searchInput.value.toLowerCase();
-  filteredMovies = movies.filter(([title, year, director]) =>
-    [title, year, director].some((field) =>
-      field.toLowerCase().includes(searchTerm)
-    )
+
+  // Фильтрация по названию, году, режиссёру и жанрам
+  filteredMovies = movies.filter(
+    ([title, year, director, , genres]) =>
+      [title, year, director].some((field) =>
+        field.toLowerCase().includes(searchTerm)
+      ) || genres.some((genre) => genre.toLowerCase().includes(searchTerm)) // Проверка по жанрам
   );
 
   renderMovies(filteredMovies);
