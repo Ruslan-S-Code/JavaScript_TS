@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/src/Project-TS Movies for you/main.ts"></script>
+    <title>Project-TS Movies for you</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    #controls {
+        margin-bottom: 20px;
+    }
+
+    .movie {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(126, 255, 33);
+        border-radius: 10px;
+        height: 500px;
+        margin: 10%;
+    }
+
+    #movie-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    #controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    h1,
+    h3,
+    p {
+        text-align: center;
+    }
+
+    #search-input {
+        width: 400px;
+        border-radius: 2rem;
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    #search {
+        background-color: sandybrown;
+        color: white;
+        border-radius: 2rem;
+        padding: 8px 10px;
+    }
+
+    #search:hover {
+        cursor: pointer;
+        background-color: springgreen;
+        color: black;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        /* Вертикальное выравнивание */
+        justify-content: center;
+        /* Центрирование по вертикали */
+        align-items: center;
+        /* Центрирование по горизонтали */
+        gap: 10px;
+        /* Расстояние между кнопками */
+        height: 30vh;
+        /* Высота для выравнивания на всей высоте окна */
+    }
+
+    #year-up:hover,
+    #year-down:hover,
+    #best-rate:hover {
+        cursor: pointer;
+        background-color: blue;
+        color: rgb(255, 255, 255);
+    }
+
+    #year-up,
+    #year-down,
+    #best-rate {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-radius: 2rem;
+        padding: 5px 10px;
+        /* Размеры кнопок */
+        width: 200px;
+        /* Ширина кнопок */
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+
+
+<body>
+    <h1>Movies for you</h1>
+    <p>The best MovieDB</p>
+    <div id="controls">
+        <input id="search-input" type="text" placeholder="Search movies..." />
+        <button id="search">SEARCH</button>
+        <div class="btn">
+            <button id="year-up">YEAR UP</button>
+            <button id="year-down">YEAR DOWN</button>
+            <button id="best-rate">BEST RATE</button>
+        </div>
+    </div>
+    <div id="movie-container"></div>
+</body>
+
+</html>
