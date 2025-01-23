@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #202020;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 140px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #495057;
+}
+
+#letters button {
+    margin: 14px;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+}
+
+#letters button:hover {
+    background-color: #0056b3;
+}
+
+#letters button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+#hintButton,
+#startButton {
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: ease 0.3s;
+}
+
+#hintButton:hover,
+#startButton:hover {
+    background: #218838;
+}
+
+#hintButton:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+#wordDisplay {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    color: #212529;
+}
+
+#message {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #d9534f; /* Цвет для сообщений о проигрыше */
+}
+
+#timerDiv {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #495057;
+}
