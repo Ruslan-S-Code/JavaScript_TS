@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 30px;
+    background-color: #dedede;
 }
 
 #character-container-rick, #character-container-pokemon {
@@ -20,12 +21,14 @@ body {
     width: 300px;
     text-align: center;
     box-shadow: 2px 2px 8px #000000;
+    background-color: #ffffff;
 }
 
 .character-card img {
     width: 100%;
     border-radius: 8px;
 }
+
 
 .search-input input {
     width: 500px; /* Установите желаемую ширину */
@@ -34,5 +37,6 @@ body {
     font-size: 26px; /* Размер шрифта */
     border: 1px solid #ccc; /* Граница */
     border-radius: 5px; /* Закругление углов */
+    box-shadow: 2px 2px 8px #000000;
 }
 
