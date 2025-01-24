@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+#character-container-rick, #character-container-pokemon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.character-card {
+    border: 1px solid #666666;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 8px #000000;
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.search-input input {
+    width: 500px; /* Установите желаемую ширину */
+    height: 30px; /* Установите желаемую высоту */
+    padding: 10px; /* Отступы внутри поля ввода */
+    font-size: 26px; /* Размер шрифта */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Закругление углов */
+}
+
