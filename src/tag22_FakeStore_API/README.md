@@ -2,6 +2,8 @@
 
 Auf der Webseite **FakeStore** findest du eine Vielzahl von Produkten, die dynamisch über eine API geladen werden. Die Seite bietet ein modernes und benutzerfreundliches Design sowie folgende Funktionen:
 
+![FakeStore Screenshot](./assets/fakestore.png)
+
 ## Funktionen:
 
 - **Intelligente Filter und Sortierung:**
