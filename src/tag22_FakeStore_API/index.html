@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStore API</title>
+    <link rel="stylesheet" href="/src/tag22_FakeStore_API/css/style.css">
+    <script type="module" src="/src/tag22_FakeStore_API/main.ts"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>FakeStore</h1>
+        <input type="text" id="search" placeholder="Search for products...">
+    </div>
+
+    <div class="container">
+        <div class="filters">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+            </select>
+            <select id="sort-filter">
+                <option value="default">Sort by</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+            </select>
+        </div>
+        <div id="product-list" class="products"></div>
+        <div class="cart" id="cart">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+
+            <button id="checkout-button">Checkout</button>
+            <p id="total-price">Total: $0</p>
+        </div>
+    </div>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select Payment Method</h2>
+            <button class="payment-button">Pay with Credit Card</button>
+            <button class="payment-button">Pay with PayPal</button>
+            <button class="payment-button">Pay with Apple Pay</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FakeStore. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
