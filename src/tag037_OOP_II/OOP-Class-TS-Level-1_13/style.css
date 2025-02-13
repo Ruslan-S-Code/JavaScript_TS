@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #757575;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 350px; /* Общая ширина карточки */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+/* Контейнер для фото водителя */
+.driver-photo-container {
+  display: flex;
+  justify-content: center; /* Выравнивание по центру */
+  align-items: center; /* Центрирование по вертикали */
+  width: 100%; /* Ширина контейнера */
+  height: 150px; /* Фиксированная высота контейнера */
+  margin-bottom: 10px; /* Отступ снизу */
+  overflow: hidden; /* Обрезка изображений, если они больше контейнера */
+  border-radius: 8px;
+  background-color: #e9ecef; /* Фон для пустого контейнера */
+}
+
+.driver-photo-container img {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+/* Контейнер для фото автомобиля */
+.car-photo-container {
+  display: flex;
+  flex-direction: column; /* Размещение элементов вертикально */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ширина контейнера */
+  height: 200px; /* Фиксированная высота контейнера */
+  margin-top: 10px; /* Отступ сверху */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #e9ecef;
+}
+
+.car-photo-container img {
+  width: auto;
+  height: 115%;
+}
+
+.speed {
+  font-weight: bold;
+  color: #007bff;
+}

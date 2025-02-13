@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 200px;
+}
+.flavor {
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 55px;
+  width: 200px; /* Фиксированная ширина карточки */
+  height: 200px; /* Фиксированная высота карточки */
+  display: flex; /* Используем flex для выравнивания контента */
+  flex-direction: column; /* Контент располагается вертикально */
+  justify-content: space-between; /* Распределяем пространство равномерно */
+  align-items: center; /* Выравниваем элементы по центру */
+  text-align: center; /* Текст по центру */
+}
+.flavor h2 {
+  margin: 0;
+}
+.flavor p {
+  margin: 5px 0;
+}
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ee2a55;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e9617f;
+}
